@@ -2,10 +2,12 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codeshipportfolios.github.io/haruki-portfolio",
   "dependencies": {
     "body-parser": "^1.18.2",
     "classnames": "^2.2.5",
     "express": "^4.16.2",
+    "gh-pages": "^1.1.0",
     "jquery": "^3.2.1",
     "node-sass-chokidar": "^0.0.3",
     "nodemailer": "^4.4.2",
@@ -26,7 +28,8 @@
     "build-js": "react-scripts build",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "proxy": {
     "/contact/form": {
